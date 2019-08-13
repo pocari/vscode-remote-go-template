@@ -1,3 +1,3 @@
-module github.com/pocari/vscode-remote-template-go
+module github.com/pocari/vscode-remote-go-template
 
 go 1.12
