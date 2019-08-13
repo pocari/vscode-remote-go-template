@@ -1,0 +1,6 @@
+version: '3'
+services:
+  dev:
+    # volumes:
+    #   - settings.vscode.json:/root/.vscode-remote/data/Machine/settings.json
+
