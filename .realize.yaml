@@ -2,6 +2,8 @@ settings:
   legacy:
     force: false
     interval: 0s
+server:
+  host: 0.0.0.0
 schema:
 - name: workspace
   path: .
@@ -21,3 +23,5 @@ schema:
     - .git
     - .realize
     - vendor
+    - containers
+    - .devcontainers
