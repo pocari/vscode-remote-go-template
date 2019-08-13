@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 9080:9080
+      - 5002:5002
     volumes:
-      - .:/root/workspace
+      - .:/root/workspace:cached
     command: tail -f /dev/null
     working_dir: /root/workspace
