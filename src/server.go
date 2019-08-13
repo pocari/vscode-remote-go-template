@@ -4,15 +4,17 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+
+	"github.com/pocari/vscode-remote-go-template/src/hello"
 )
 
-func hello(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "Hello remote world!!@!@")
+func handle(w http.ResponseWriter, r *http.Request) {
+	io.WriteString(w, fmt.Sprintf("%s%s\n", hello.Greet(), "!!"))
 }
 
 func main() {
 	portNumber := "9080"
-	http.HandleFunc("/", hello)
+	http.HandleFunc("/", handle)
 	fmt.Println("Server listening on port ", portNumber)
 	http.ListenAndServe(":"+portNumber, nil)
 }
