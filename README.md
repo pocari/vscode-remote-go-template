@@ -1,3 +1,8 @@
+## goの標準ディレクトリ構造みたいなのがあるらしくて、それに合わせたリポジトリ
+
+https://github.com/pocari/vscode-remote-go-standard-dir-layout-template
+
+
 # goのプロジェクトでのvscodeのremote設定サンプル
 
 - remote側でのbreakpoint、デバッグ実行ができる
